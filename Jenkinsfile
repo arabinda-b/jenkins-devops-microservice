@@ -2,7 +2,7 @@
 //Declarative
 pipeline {
 	//agent any
-	agent { docker { image 'node:13.8' } }
+	agent { docker 'maven:3.8.1-adoptopenjdk-11' }
 	stages {
 		stage('Build') {
 			steps {
